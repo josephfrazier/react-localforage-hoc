@@ -7,13 +7,16 @@ A higher order function that wraps [React](https://facebook.github.io/react/) co
 ```js
 import persist from 'react-localstorage-hoc'
 
-class Counter extends React.Component{
-  render(){
+class Counter extends React.Component {
+  render() {
     let { counter } = this.state
-    return <div 
-      onClick={ e => this.setState({counter:counter+1 })}>{'Clicked ' + counter + ' times'}</div>
+    return (
+      <div onClick={e => this.setState({ counter: counter + 1 })}>
+        {'Clicked ' + counter + ' times'}
+      </div>
+    )
   }
 }
 
-export default persist( Counter )
+export default persist(Counter)
 ```
