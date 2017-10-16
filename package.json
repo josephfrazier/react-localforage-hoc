@@ -1,0 +1,19 @@
+{
+  "name": "react-localstorage-hoc",
+  "version": "0.0.0",
+  "description": "A higher order function that wrap react components and saves it's state in persistent storage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephfrazier/react-localstorage-hoc.git"
+  },
+  "author": "Joseph Frazier <1212jtraceur@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josephfrazier/react-localstorage-hoc/issues"
+  },
+  "homepage": "https://github.com/josephfrazier/react-localstorage-hoc#readme"
+}
