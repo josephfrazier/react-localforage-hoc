@@ -4,7 +4,7 @@ A higher order function that wraps [React](https://facebook.github.io/react/) co
 ## Usage
 `npm install react-localstorage-hoc`
 
-```
+```js
 import persist from 'react-localstorage-hoc'
 
 class Counter extends React.Component{
