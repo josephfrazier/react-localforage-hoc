@@ -2,8 +2,10 @@
   "name": "react-localstorage-hoc",
   "version": "0.0.0",
   "description": "A higher order function that wrap react components and saves it's state in persistent storage",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "build": "babel index.js -d lib",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/josephfrazier/react-localstorage-hoc/issues"
   },
-  "homepage": "https://github.com/josephfrazier/react-localstorage-hoc#readme"
+  "homepage": "https://github.com/josephfrazier/react-localstorage-hoc#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0"
+  }
 }
