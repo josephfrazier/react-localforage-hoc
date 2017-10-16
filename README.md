@@ -2,7 +2,7 @@
 A higher order function that wraps [React](https://facebook.github.io/react/) components saving their state in persistent localStorage. Similar to [react-localstorage](https://github.com/STRML/react-localstorage) but implemented as a [higher order component](https://gist.github.com/sebmarkbage/ef0bf1f338a7182b6775)
 
 ## Usage
-`npm install marklundin/react-localstorage-hoc`
+`npm install react-localstorage-hoc`
 
 ```
 import persist from 'react-localstorage-hoc'
