@@ -1,6 +1,6 @@
 {
   "name": "react-localstorage-hoc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A higher order function that wrap react components and saves it's state in persistent storage",
   "main": "lib/index.js",
   "scripts": {
