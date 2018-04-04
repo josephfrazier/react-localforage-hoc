@@ -9,10 +9,10 @@
 
 
 /*
-    Global if localStorage is available on the system
+    Check if localStorage is available on the system
 */
 
-let hasLocalStorage = localStorage
+let hasLocalStorage = require('global').localStorage
 
 if (hasLocalStorage) {
     let testKey = 'react-localstorage.hoc.test-key';
