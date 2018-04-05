@@ -1,5 +1,5 @@
 {
-  "name": "react-localstorage-hoc",
+  "name": "react-localforage-hoc",
   "version": "0.0.2",
   "description": "A higher order function that wrap react components and saves it's state in persistent storage",
   "main": "lib/index.js",
@@ -10,19 +10,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/josephfrazier/react-localstorage-hoc.git"
+    "url": "git+https://github.com/josephfrazier/react-localforage-hoc.git"
   },
   "author": "Joseph Frazier <1212jtraceur@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/josephfrazier/react-localstorage-hoc/issues"
+    "url": "https://github.com/josephfrazier/react-localforage-hoc/issues"
   },
-  "homepage": "https://github.com/josephfrazier/react-localstorage-hoc#readme",
+  "homepage": "https://github.com/josephfrazier/react-localforage-hoc#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0"
   },
   "dependencies": {
-    "global": "^4.3.2"
+    "global": "^4.3.2",
+    "localforage": "^1.7.1"
   }
 }

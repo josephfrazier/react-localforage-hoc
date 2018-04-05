@@ -3,9 +3,12 @@
 /*
     A higher order function that wraps a component with functionality
     that save's it's state to local storage. This means the components state
-    will persist across page refreshes under the same domain and rules of localStorage.
+    will persist across page refreshes under the same domain and rules of https://github.com/localForage/localForage.
 
 */
+
+
+const localforage = require('localforage')
 
 
 /*
@@ -39,21 +42,21 @@ let WrapWithLocalStorate = Component => {
 
     let name = Component.displayName || Component.constructor.displayName || Component.constructor.name
 
-    class LocalStorageComponent extends Component {
+    class LocalForageComponent extends Component {
 
         componentWillMount(){
-            this.setState( JSON.parse( localStorage.getItem( name )))
+            localforage.getItem(name).then(state => this.setState(state))
         }
 
         componentWillUpdate( nextProps, nextState ){
-            localStorage.setItem( name, JSON.stringify( nextState ))
+            localforage.setItem( name, nextState )
         }
 
     }
 
-    LocalStorageComponent.displayName = name
+    LocalForageComponent.displayName = name
 
-    return LocalStorageComponent
+    return LocalForageComponent
 
 }
 
